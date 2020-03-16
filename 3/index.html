@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Lab03</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <center>
+        <table border="3">
+            <thead>
+                <tr>
+                    <th>m</th>
+                    <th>n</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>399</td>
+                    <td>433</td>
+                </tr>
+            </tbody>
+        </table>
+    </center>
+
+    <details>
+        <summary>НОД</summary>
+        <input id="nod-first-value" type="number" /><input id="nod-second-value" type="number" />
+        <!-- <input type="number" /> -->
+        <button onclick='getNod()'>Find</button>
+        <br />
+        <textarea id="nod-result" readonly="true"></textarea>
+    </details>
+    <details>
+        <summary>Простые числа</summary>
+        <input id="simple-first-value" type="number" /><input id="simple-last-value" type="number" />
+        <button onclick='getSimple()'>Find</button>
+        <table border="1">
+            <tr id="simple-result">
+            </tr>
+        </table>
+        <h5 id="simple-count"></h5>
+    </details>
+    <details>
+        <summary>Решето Эратосфена</summary>
+        <input id="sharp-value" type="number" />
+        <button onclick='getSharp()'>Find</button>
+        <h5 id="sharp-count" />
+        </h5>
+        <table border="1" id="sharp-result">
+        </table>
+    </details>
+</body>
+
+</html>
