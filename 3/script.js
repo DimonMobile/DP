@@ -111,3 +111,13 @@ function getSharp() {
 
     sharpCountElement.innerText = `Count: ${count}`;
 }
+
+function euResult() {
+    let eu1 = document.getElementById('eu-1').value;
+    let eu2 = document.getElementById('eu-2').value;
+    let euResult = document.getElementById('eu-result');
+
+    fetch(`/eu?p1=${eu1}&p2=${eu2}`).then(r => r.text()).then(text => {
+        euResult.value = text;
+    });
+}
