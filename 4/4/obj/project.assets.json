@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\d.plotnikov\\.nuget\\packages\\": {}
+    "C:\\Users\\Mobile\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\d.plotnikov\\Documents\\My\\BSTU\\DP\\4\\4\\4.csproj",
+      "projectUniqueName": "D:\\CodeProj\\BSTU\\DP\\4\\4\\4.csproj",
       "projectName": "4",
-      "projectPath": "C:\\Users\\d.plotnikov\\Documents\\My\\BSTU\\DP\\4\\4\\4.csproj",
-      "packagesPath": "C:\\Users\\d.plotnikov\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\d.plotnikov\\Documents\\My\\BSTU\\DP\\4\\4\\obj\\",
+      "projectPath": "D:\\CodeProj\\BSTU\\DP\\4\\4\\4.csproj",
+      "packagesPath": "C:\\Users\\Mobile\\.nuget\\packages\\",
+      "outputPath": "D:\\CodeProj\\BSTU\\DP\\4\\4\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\d.plotnikov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Mobile\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -61,7 +61,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

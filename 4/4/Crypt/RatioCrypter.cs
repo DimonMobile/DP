@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text;
 
 namespace _4.Crypt
@@ -8,8 +9,27 @@ namespace _4.Crypt
     {
         private int k = 7;
 
+        private int Mod(int par, int mod)
+        {
+            if (par >= 0)
+                return par % mod;
+            else
+            {
+                while (par < 0)
+                {
+                    par += mod;
+                }
+                return par;
+            }
+        }
+
         private string crypt(string source, bool isEncrypt)
         {
+            for (int i = 10; i >= -10; --i)
+            {
+                Trace.WriteLine($"{i} mod 3 = {Mod(i, 3)}");
+            }
+
             string newSource = source.ToLower();
             StringBuilder sb = new StringBuilder();
             foreach (char symb in newSource)
@@ -17,7 +37,7 @@ namespace _4.Crypt
                 if (Char.IsLetter(symb))
                 {
                     int val = (int)symb - (int)'a';
-                    int newVal = (isEncrypt) ? (val + k) % 26 : (val - k) % 26;
+                    int newVal = (isEncrypt) ? Mod((val + k), 26) : Mod((val - k), 26);
                     sb.Append((char)((int)'a' + newVal));
                 }
                 else
