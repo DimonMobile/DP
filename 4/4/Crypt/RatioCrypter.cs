@@ -25,11 +25,6 @@ namespace _4.Crypt
 
         private string crypt(string source, bool isEncrypt)
         {
-            for (int i = 10; i >= -10; --i)
-            {
-                Trace.WriteLine($"{i} mod 3 = {Mod(i, 3)}");
-            }
-
             string newSource = source.ToLower();
             StringBuilder sb = new StringBuilder();
             foreach (char symb in newSource)
