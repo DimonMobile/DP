@@ -1,137 +1,37 @@
 
-Skip to main content
 
-    Docs .NET C# guide Programming guide File system and the registry 
+Amy hasste normalerweise Montagmorgen, aber dieses Jahr war anders. Kamal war in ihrem Kunstunterricht und sie mochte Kamal. Sie wartete vor dem Klassenzimmer, als ihre Freundin Tara ankam.
 
-Search
+"Hallo Amy! Deine Mutter hat mir einen Text geschickt. Du hast deinen Inhalator vergessen. Warum schaltest du dein Handy nicht ein? " Amy mochte keine Technologie. Sie hat nie Textnachrichten verschickt und auch Facebook gehasst.
 
-    C# documentation
+"Hat Kamal dich in die Disco gebeten?" Tara war Amys beste Freundin und sie wollte alles wissen, was in Amys Leben geschah. "Ich glaube nicht, dass er mich mag", sagte Amy. „Und ich sehe ihn nie alleine. Er ist immer bei Grant. " Amy und Tara mochten Grant nicht.
 
-Overview
+"Wissen Sie über ihr Kunstprojekt Bescheid?" fragte Amy. "Ich denke, es geht um Graffiti", sagte Tara. "Sie arbeiten im alten Haus hinter der Fabrik daran." "Aber dieses Gebäude ist gefährlich", sagte Amy. "Aah, hast du Angst, dass er verletzt wird?", Neckte Tara. "Halt die Klappe, Tara! Hey schau, hier kommen sie!"
 
-    Overview
-    How to iterate through a directory tree
-    How to get information about files, folders, and drives
-    How to create a file or folder
-    How to copy, delete, and move files and folders
-    How to provide a progress dialog box for file operations
-    How to write to a text file
-    How to read From a text file
-    How to read a text file one line at a time
-    How to create a key in the registry
+Kamal und Grant kamen an. "Hallo Kamal!" sagte Tara. "Gehst du morgen in die Halloween-Disco?" "Ja. Hallo Amy “, sagte Kamal lächelnd. "Möchtest du nach der Schule unsere Bilder sehen?" "Ich komme auch!" Tara bestand darauf.
 
-    Walkthroughs
+Nach der Schule brachte Kamal die Mädchen in das alte Haus. Es war sehr alt und auch sehr schmutzig. Überall war Müll. Die Fenster waren zerbrochen und die Wände feucht. Es war gruselig. Amy hat es nicht gefallen. An den Wänden hingen Zombies und Skelette. "Wir werden Fotos für den Schulkunstwettbewerb machen", sagte Kamal. Amy mochte es nicht, aber sie sagte nichts. "Wo ist Grant?" fragte Tara. "Ähm, er kauft mehr Farbe." Kamal sah schnell weg. Tara fand ihn misstrauisch. "Es wird dunkel, können wir jetzt gehen?" sagte Amy. Sie mochte keine Zombies.
 
-How to write to a text file (C# Programming Guide)
+Dann hörten sie ein lautes Geräusch aus einem Schrank in der Ecke des Raumes. "Was ist das?" Amy hatte Angst. "Ich habe nichts gehört", sagte Kamal. Etwas machte seltsame Geräusche. Da war etwas im Schrank. "Ach nein! Was ist es?" Amy hatte jetzt große Angst. "Was meinen Sie? Da ist nichts!" Kamal versuchte nicht zu lächeln. Plötzlich öffnete sich die Tür mit einem Knall und ein Zombie erschien, schrie und bewegte seine Arme. Amy schrie und bedeckte ihre Augen. "Oh, sehr lustig, Grant!" sagte Tara und sah gelangweilt aus. Kamal und Grant fingen an zu lachen. "Ha ha, du hattest Angst!" sagte Grant. "Magst du mein Zombiekostüm?" Amy nahm Taras Arm. "Ich kann nicht atmen", sagte sie. Kamal sah jetzt besorgt aus. "Geht es ihr gut? Es war nur ein Witz." "Nein, es geht ihr nicht gut, du Idiot. Sie hat einen Asthmaanfall und sie hat ihren Inhalator vergessen." Tara holte ihr Handy heraus. "Ich rufe ihren Vater an."
 
-    07/20/2015
-    2 minutes to read
-        +6 
+Am nächsten Abend war Halloween. Die Mädchen waren in der Schuldisco. "Geht es dir jetzt besser?" fragte Tara. "Mir geht es gut", sagte Amy. "Ich denke, es war der Geruch von Farbe, der den Angriff auslöste." Tara sah sich um. "Also, wo sind die Zombies?" "Ich weiß nicht, ich möchte Kamal nicht wiedersehen", sagte Amy. "Komm schon, lass uns tanzen!"
 
-These examples show various ways to write text to a file. The first two examples use static convenience methods on the System.IO.File class to write each element of any IEnumerable<string> and a string to a text file. Example 3 shows how to add text to a file when you have to process each line individually as you write to the file. Examples 1-3 overwrite all existing content in the file, but example 4 shows you how to append text to an existing file.
+Amy und Tara tanzten, als Grant ankam und sahen besorgt aus. „Hallo, jemand hat mein Handy gestohlen. Hast du Kamal gesehen? Er sagte, er komme um acht Uhr hierher. Kannst du ihn anrufen? " "Geh weg, Idiot!" Tara hörte nicht auf zu tanzen. Grant sah verärgert aus. "Sag ihm, dass ich ihn suche", rief er, als er die Disco verließ. Tara mochte Grant wirklich nicht.
 
-These examples all write string literals to files. If you want to format text written to a file, use the Format method or C# string interpolation feature.
-Example
-C#
+In diesem Moment klingelte Taras Telefon. Sie sah es an. "Ha!" Sie sagte: "Ich glaube es nicht!" "Was ist es?" fragte Amy. „Kamal hat gerade einen Text an alle geschickt. Hör mal zu!" Tara las Kamals Nachricht vor.
 
-class WriteTextFile
-{
-    static void Main()
-    {
+"Ich bin im Haus. Ich kann mich nicht bewegen. Bitte rufen Sie einen Krankenwagen. Meine Batterie ist leer. “
 
-        // These examples assume a "C:\Users\Public\TestFolder" folder on your machine.
-        // You can modify the path if necessary.
+Die Mädchen hörten nicht auf zu tanzen. Viele ihrer Freunde sahen auch Kamals Nachricht, aber Tara sagte allen, es sei nur ein Witz. Sie alle ignorierten es.
 
-        // Example #1: Write an array of strings to a file.
-        // Create a string array that consists of three lines.
-        string[] lines = { "First line", "Second line", "Third line" };
-        // WriteAllLines creates a file, writes a collection of strings to the file,
-        // and then closes the file.  You do NOT need to call Flush() or Close().
-        System.IO.File.WriteAllLines(@"C:\Users\Public\TestFolder\WriteLines.txt", lines);
+Am nächsten Morgen hörten Amys Mutter und Vater Radio. "Ist Amy schon wach?" Fragte Papa. "Nein, sie ist müde", sagte Mama und drehte die Lautstärke im Radio auf.
 
-        // Example #2: Write one string to a text file.
-        string text = "A class is the most powerful data type in C#. Like a structure, " +
-                       "a class defines the data and behavior of the data type. ";
-        // WriteAllText creates a file, writes the specified string to the file,
-        // and then closes the file.    You do NOT need to call Flush() or Close().
-        System.IO.File.WriteAllText(@"C:\Users\Public\TestFolder\WriteText.txt", text);
+„Heute Morgen untersucht die Polizei den Tod eines sechzehnjährigen Jungen. Er ist letzte Nacht in einem stillgelegten Haus in der Moortown Road gestorben ... "
 
-        // Example #3: Write only some strings in an array to a file.
-        // The using statement automatically flushes AND CLOSES the stream and calls 
-        // IDisposable.Dispose on the stream object.
-        // NOTE: do not use FileStream for text files because it writes bytes, but StreamWriter
-        // encodes the output as text.
-        using (System.IO.StreamWriter file = 
-            new System.IO.StreamWriter(@"C:\Users\Public\TestFolder\WriteLines2.txt"))
-        {
-            foreach (string line in lines)
-            {
-                // If the line doesn't contain the word 'Second', write the line to the file.
-                if (!line.Contains("Second"))
-                {
-                    file.WriteLine(line);
-                }
-            }
-        }
+Papa legte seine Zeitung hin. "Aber dorthin ist Amy mit ihren Freunden gegangen."
 
-        // Example #4: Append new text to an existing file.
-        // The using statement automatically flushes AND CLOSES the stream and calls 
-        // IDisposable.Dispose on the stream object.
-        using (System.IO.StreamWriter file = 
-            new System.IO.StreamWriter(@"C:\Users\Public\TestFolder\WriteLines2.txt", true))
-        {
-            file.WriteLine("Fourth line");
-        }
-    }
-}
- //Output (to WriteLines.txt):
- //   First line
- //   Second line
- //   Third line
-     
- //Output (to WriteText.txt):
- //   A class is the most powerful data type in C#. Like a structure, a class defines the data and behavior of the data type.
-     
- //Output to WriteLines2.txt after Example #3:
- //   First line
- //   Third line
-      
- //Output to WriteLines2.txt after Example #4:
- //   First line
- //   Third line
- //   Fourth line
-
-Robust Programming
-
-The following conditions may cause an exception:
-
-    The file exists and is read-only.
-
-    The path name may be too long.
-
-    The disk may be full.
-
-See also
-
-    C# Programming Guide
-    File System and the Registry (C# Programming Guide)
-    Sample: Save a collection to Application Storage
-
-Feedback
-
-Send feedback about
-
-You may also leave feedback directly on GitHub .
-
-Loading feedback...
-Is this page helpful?
-In this article
-
-    Example
-    Robust Programming
-    See also
-
-English (United States)
-
-    Previous Version Docs Blog Contribute Privacy & Cookies Terms of Use Site Feedback Trademarks © Microsoft 2020 
-
+„... Sie haben die Leiche heute früh gefunden. Sein Name war Kamal Naseer ... "
+Send feedback
+History
+Saved
+Community
