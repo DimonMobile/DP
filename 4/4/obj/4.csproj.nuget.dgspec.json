@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\CodeProj\\BSTU\\DP\\4\\4\\4.csproj": {}
+    "D:\\CodeProj\\BSTU\\DP\\labs\\4\\4\\4.csproj": {}
   },
   "projects": {
-    "D:\\CodeProj\\BSTU\\DP\\4\\4\\4.csproj": {
+    "D:\\CodeProj\\BSTU\\DP\\labs\\4\\4\\4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CodeProj\\BSTU\\DP\\4\\4\\4.csproj",
+        "projectUniqueName": "D:\\CodeProj\\BSTU\\DP\\labs\\4\\4\\4.csproj",
         "projectName": "4",
-        "projectPath": "D:\\CodeProj\\BSTU\\DP\\4\\4\\4.csproj",
+        "projectPath": "D:\\CodeProj\\BSTU\\DP\\labs\\4\\4\\4.csproj",
         "packagesPath": "C:\\Users\\Mobile\\.nuget\\packages\\",
-        "outputPath": "D:\\CodeProj\\BSTU\\DP\\4\\4\\obj\\",
+        "outputPath": "D:\\CodeProj\\BSTU\\DP\\labs\\4\\4\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mobile\\AppData\\Roaming\\NuGet\\NuGet.Config",

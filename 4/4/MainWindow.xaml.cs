@@ -91,5 +91,15 @@ namespace _4
             var elapsedMs = watch.ElapsedMilliseconds;
             MessageBox.Show(elapsedMs.ToString());
         }
+
+        private void Route_Checked(object sender, RoutedEventArgs e)
+        {
+            m_activeCrypter = new RouteCrypter();
+        }
+
+        private void Set_Checked(object sender, RoutedEventArgs e)
+        {
+            m_activeCrypter = new MultipleCrypter();
+        }
     }
 }

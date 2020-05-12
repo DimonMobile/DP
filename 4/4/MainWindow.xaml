@@ -15,6 +15,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="25"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="25"/>
         </Grid.RowDefinitions>
 
         <RadioButton Grid.Column="0" Grid.Row="0" IsChecked="True" Checked="RadioButton_Checked">Соотношения</RadioButton>
@@ -24,6 +25,8 @@
             <Button Click="Button_Click">Crypt</Button>
             <Button Click="Button_Click_1">Decrypt</Button>
         </StackPanel>
-        <TextBox Name="ResultTextBox" Grid.Column="2" Grid.Row="1" AcceptsReturn="True" TextWrapping="Wrap"/>
+        <TextBox Name="ResultTextBox" Grid.Column="2" Grid.Row="1" AcceptsReturn="True" TextWrapping="Wrap" FontFamily="Lucida Console"/>
+        <RadioButton Grid.Column="0" Grid.Row="2" IsChecked="True" Checked="Route_Checked">Маршрутная</RadioButton>
+        <RadioButton Grid.Column="2" Grid.Row="2" Checked="Set_Checked">Множественная</RadioButton>
     </Grid>
 </Window>
