@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <input id="keyInput" type="text" placeholder="key"/><br/>
+        <input id="sourceText" type="text" placeholder="to cipher"/><br/>
+        <input id="cipheredText" type="text" readonly/></br>
+        <button onclick="executeChiphering()">Cipher</button></br>
+        <label>S Block</label>
+        <ol id="sblockoutput">
+
+        </ol>
+
+        <script>
+            let keyInput = document.getElementById("keyInput");
+            let sblockoutput = document.getElementById("sblockoutput");
+            let sourceInput = document.getElementById("sourceText");
+            let cipheredText = document.getElementById("cipheredText");
+
+
+            function genNewS(keyword) {
+                let s = []
+                for (let i = 0; i < 255; ++i) {
+                    s.push(i);
+                }
+
+                let k = [];
+                let j = 0;
+                for (let i = 0; i < 255;) {
+                    if (j < keyword.length) {
+                        k.push(keyword[j++].charCodeAt(0) % 256);
+                        ++i;
+                    } else {
+                        j = 0;
+                    }
+                }
+
+                // shuffle s with k
+                j = 0;
+                for (let i = 0; i < 255; ++i) {
+                    j = (j + s[i] + k[i]) % 256;
+                    // swap values
+                    let temp = s[i];
+                    s[i] = s[j];
+                    s[j] = temp;
+                }
+                drawS(s);
+                return s;
+            }
+
+            function drawS(arrayS) {
+                sblockoutput.innerHTML = '';
+                for (let el of arrayS) {
+                    sblockoutput.innerHTML += `<li>${el}</li>`;
+                }
+            }
+
+            function cipher(text, s) {
+                let i = 0;
+                let j = 0;
+                let result = '';
+                for (let symbol of text) {
+                    i = (i + 1) % 256;
+                    j = (j + s[i]) % 256;
+                    // swap values
+                    let tmp = s[i];
+                    s[i] = s[j];
+                    s[j] = tmp;
+                    let t = (s[i] + s[j]) % 256;
+                    let res = s[t];
+                    result += String.fromCharCode(res ^ symbol.charCodeAt(0));
+                }
+                return result;
+            }
+
+            function executeChiphering() {
+                let s = genNewS(keyInput.value);
+                cipheredText.value = cipher(sourceInput.value, s);
+            }
+
+            keyInput.addEventListener('change', e => {
+                genNewS(keyInput.value);
+            });
+        </script>
+    </body>
+</html>
